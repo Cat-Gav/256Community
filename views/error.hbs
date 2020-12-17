@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+ 
+<style>
+   h1,h2 {
+       color: rgb(0, 0, 0);
+       size: ;
+   }
+</style>
+ <audio autoplay preload="auto">
+	<source src="audio/error.mp3" type="audio/mpeg">
+	  </audio>
+<div id="Win_error" class="win">
+		<div id="Winnav_error">
+			
+			<span>ERROR</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<div id="error_canvas" width="400" height="600">
+                <img src="/images/just.gif">
+                <h1>Do not be upset! Try once more.</h1>
+                <h2>{{err}}</h2>
+                <pre>{{error.stack}}</pre>
+        </div>
+</div>

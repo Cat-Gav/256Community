@@ -1,0 +1,316 @@
+ <div id="page-preloader">
+	  <audio autoplay preload="auto">>
+	<source src="audio/preload.mp3" type="audio/mpeg">
+	  </audio>
+  </div>
+<div id="icons">
+
+	
+		<div id="games" class="icon games">
+			<div class="games"></div>
+			<div class="icon_text">Mario</div>
+		</div>
+		
+		<div id="about" class="icon about">
+			<div class="about"></div>
+			<div class="icon_text">About.txt</div>
+		</div>
+	
+		<div id="price" class="icon price">
+			<div class="price"></div>
+			<div class="icon_text">Price.txt</div>
+		</div>
+
+		<div id="location" class="icon location ">
+			<div class="location"></div>
+			<div class="icon_text">Location</div>
+		</div>
+
+		<div id="FAQ" class="icon FAQ">
+			<div class="FAQ"></div>
+			<div class="icon_text">FAQ.txt</div>
+		</div>
+		<div id="gallery" class="icon gallery">
+			<div class="gallery"></div>
+			<div class="icon_text">Gallery</div>
+		</div>
+		
+		<div id="contact" class="icon contact">
+			<div class="contact"></div>
+			<div class="icon_text">Contacts.txt</div>
+		</div>
+	</div>
+
+	<div id="Win_games" class="win drag resize" hidden="hidden">
+		<div id="Winnav_games">
+			<span>Mario - Infinity</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="canvas" width="640" height="480"></canvas>
+	</div>
+
+	<div id="Win_about" class="win drag resize" hidden="hidden">
+		<div id="Winnav_Notepad">
+			<img src="/images/Notepad.png">
+			<span>About.txt - Notepad</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="about_canvas" width="600" height="225"></canvas>
+	</div>
+
+	<div id="Win_price" class="win" hidden="hidden">
+		<div id="Winnav_Notepad">
+			<img src="/images/Notepad.png">
+			<span>Price.txt - Notepad</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<div id="price_canvas" width="500" height="325"><table>
+				<caption>
+					PC rental
+				</caption>
+				</tr>
+				<tr>
+				  <td>From 9:00 to 16:00 1 hour STANDART PC (weekdays)</td>
+				  <td>50 Rubles</td>
+				</tr>
+				<tr>
+				  <td>From 9:00 to 16:00 1 hour PREMIUM PC (weekdays)</td>
+				  <td>100 Rubles</td>
+				</tr>
+				<tr>
+				  <td>From 16:00 to 9:00 1 hour STANDART PC</td>
+				  <td>100 Rubles</td>
+				</tr>
+				<tr>
+				  <td>From 16:00 to 9:00 1 hour PREMIUM PC</td>
+				  <td>150 Rubles</td>
+				</tr>
+				<tr>
+				  <td>Package 3 hours STANDART PC</td>
+				  <td>300 Rubles</td>
+				</tr>
+				<tr>
+				  <td>Package 3 hours PREMIUM PC</td>
+				  <td>350 Rubles</td>
+				  </tr>
+				<tr>
+				  <td>Package 23 hours STANDART PC</td>
+				  <td>900 Rubles</td>
+				</tr>
+				
+			  </table>
+			</div>
+	</div>
+
+	<div id="Win_location" class="win" hidden="hidden">
+		<div id="Winnav_map">
+			<img src="">
+			<span>Location - Map</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<div id="location_canvas" width="350" height="350"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.940811857567!2d39.06769721559854!3d45.02612697909816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f05a986c7c11f5%3A0xa176b954eaa6909b!2z0YPQuy4g0KHQvtGA0LzQvtCy0YHQutCw0Y8sIDE5LCDQmtGA0LDRgdC90L7QtNCw0YAsINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCAzNTAwMTg!5e0!3m2!1sru!2sru!4v1607710069097!5m2!1sru!2sru" width="350" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+	</div>
+
+	<div id="Win_faq" class="win drag resize" hidden="hidden">
+		<div id="Winnav_Notepad">
+			<img src="/images/Notepad.png">
+			<span>FAQ.txt - Notepad</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="faq_canvas" width="600" height="225"></canvas>
+	</div>
+
+	<div id="Win_gallery" class="win drag resize" hidden="hidden">
+		<div id="Winnav_gallery">
+			<img src="">
+			<span>Gallery</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<div id="gallery_canvas" width="262" height="218">
+			<div id="iconsImg" class="iconsImg"> 
+				
+				<div id="image1" class="flex">
+					<div class="image1"></div>
+					<div class="icon_text">Image-1</div>
+				</div>
+				
+				<div id="image2" class="flex">
+					<div class="image2"></div>
+					<div class="icon_text">Image-2</div>
+				</div>
+			
+				<div id="image3" class="flex">
+					<div class="image3"></div>
+					<div class="icon_text">Image-3</div>
+				</div>
+		
+				<div id="image4" class="flex">
+					<div class="image4"></div>
+					<div class="icon_text">Image-4</div>
+				</div>
+		
+				<div id="image5" class="flex">
+					<div class="image6"></div>
+					<div class="icon_text">Image-5</div>
+				</div>
+				<div id="image6" class="flex">
+					<div class="image6"></div>
+					<div class="icon_text">Image-6</div>
+				</div>	
+			</div>
+			</div>
+	</div>
+
+	<div id="Win_contact" class="win drag resize" hidden="hidden">
+		<div id="Winnav_Notepad">
+			<img src="/images/Notepad.png">
+			<span>Contacts.txt - Notepad</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="contact_canvas" width="500" height="325"></canvas>
+	</div>
+	<div id="Win_image1" class="win drag resize" hidden="hidden">
+		<div id="Winnav_image">
+			<span>Image-1</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="image1_canvas" width="328" height="281"></canvas>
+	</div>
+
+	<div id="Win_image2" class="win drag resize" hidden="hidden">
+		<div id="Winnav_image">
+			<span>Image-2</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="image2_canvas" width="328" height="281"></canvas>
+	</div>
+	<div id="Win_image3" class="win drag resize" hidden="hidden">
+		<div id="Winnav_image">
+			<span>Image-3</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="image3_canvas" width="328" height="281"></canvas>
+	</div>
+	<div id="Win_image4" class="win drag resize" hidden="hidden">
+		<div id="Winnav_image">
+			<span>Image-4</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="image4_canvas" width="328" height="281"></canvas>
+	</div>
+	<div id="Win_image5" class="win drag resize" hidden="hidden">
+		<div id="Winnav_image">
+			<span>Image-5</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="image5_canvas" width="328" height="281"></canvas>
+	</div>
+	<div id="Win_image6" class="win drag resize" hidden="hidden">
+		<div id="Winnav_image">
+			<span>Image-6</span>
+			<img class="Winbuttons close" src="/images/Navigation/close.png">
+			<img class="Winbuttons max" src="/images/Navigation/max.png">
+			<img class="Winbuttons" src="/images/Navigation/min.png">
+		</div>
+			<canvas id="image6_canvas" width="328" height="281"></canvas>
+	
+	</div>
+	<div class="taskbar">
+		<button class="start-button toggle" >
+			<img src="/images/start.png"><b>Start</b>
+		</button>
+		<div class="taskbar-divider"></div>
+		<div class="tasks"></div>
+		<div class="taskbar-divider"></div>
+		<div class="tray inset-shallow">
+			<div class="tray-icons">
+			
+				<img class="tray-icon" src="/images/audio.png" onclick="traysound()">
+			</div>
+			<div class="taskbar-time"></div>
+		</div>
+	</div>
+	<div class="start-menu outset-deep" hidden="" style="display: none;">
+		<div class="start-menu-titlebar"></div>
+		<div class="start-menu-content">
+			<img class="gif" src="/images/mario.gif"></img>
+		</div>
+</div>
+	
+	
+	
+	<script src="/javascripts/time.js"></script>
+	<script src="/javascripts/Enjine/core.js"></script>
+	<script src="/javascripts/Enjine/gameCanvas.js"></script>
+	<script src="/javascripts/Enjine/keyboardInput.js"></script>
+	<script src="/javascripts/Enjine/resources.js"></script>
+	<script src="/javascripts/Enjine/drawable.js"></script>
+	<script src="/javascripts/Enjine/state.js"></script>
+	<script src="/javascripts/Enjine/gameTimer.js"></script>
+	<script src="/javascripts/Enjine/camera.js"></script>
+	<script src="/javascripts/Enjine/drawableManager.js"></script>
+	<script src="/javascripts/Enjine/sprite.js"></script>
+	<script src="/javascripts/Enjine/spriteFont.js"></script>
+	<script src="/javascripts/Enjine/frameSprite.js"></script>
+	<script src="/javascripts/Enjine/animatedSprite.js"></script>
+	<script src="/javascripts/Enjine/collideable.js"></script>
+	<script src="/javascripts/Enjine/application.js"></script>
+	<script src="/javascripts/code/setup.js"></script>
+	<script src="/javascripts/code/spriteCuts.js"></script>
+	<script src="/javascripts/code/level.js"></script>
+	<script src="/javascripts/code/backgroundGenerator.js"></script>
+	<script src="/javascripts/code/backgroundRenderer.js"></script>
+	<script src="/javascripts/code/improvedNoise.js"></script>
+	<script src="/javascripts/code/notchSprite.js"></script>
+	<script src="/javascripts/code/character.js"></script>
+	<script src="/javascripts/code/levelRenderer.js"></script>
+	<script src="/javascripts/code/levelGenerator.js"></script>
+	<script src="/javascripts/code/spriteTemplate.js"></script>
+	<script src="/javascripts/code/enemy.js"></script>
+	<script src="/javascripts/code/fireball.js"></script>
+	<script src="/javascripts/code/sparkle.js"></script>
+	<script src="/javascripts/code/coinAnim.js"></script>
+	<script src="/javascripts/code/mushroom.js"></script>
+	<script src="/javascripts/code/particle.js"></script>
+	<script src="/javascripts/code/fireFlower.js"></script>
+	<script src="/javascripts/code/bulletBill.js"></script>
+	<script src="/javascripts/code/flowerEnemy.js"></script>
+	<script src="/javascripts/code/shell.js"></script>
+	<script src="/javascripts/code/titleState.js"></script>
+	<script src="/javascripts/code/loadingState.js"></script>
+	<script src="/javascripts/code/loseState.js"></script>
+	<script src="/javascripts/code/winState.js"></script>
+	<script src="/javascripts/code/mapState.js"></script>
+	<script src="/javascripts/code/levelState.js"></script>
+	<script src="/javascripts/code/music.js"></script>
+
+<script type='text/javascript' src="/javascripts/motion.js"></script>
+<script type='text/javascript' src="/javascripts/CanvaContacts.js"></script>
+<script type='text/javascript' src="/javascripts/CanvaGallery.js"></script>
+<script type='text/javascript' src="/javascripts/CanvaFaq.js"></script>
+<script type='text/javascript' src="/javascripts/CanvaAbout.js"></script>
+<script type='text/javascript' src="/javascripts/main.js"></script>
